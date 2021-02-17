@@ -1,0 +1,34 @@
+---
+swagger: "2.0"
+info:
+  version: "2021-02-17T15:54:28Z"
+  title: "meli"
+host: "u1y5ong0sl.execute-api.us-east-1.amazonaws.com"
+basePath: "/mutants"
+schemes:
+- "https"
+paths:
+  /mutants:
+    post:
+      produces:
+      - "application/json"
+      responses:
+        "200":
+          description: "200 response"
+          schema:
+            $ref: "#/definitions/Empty"
+        "403":
+          description: "403 response"
+  /stats:
+    get:
+      produces:
+      - "application/json"
+      responses:
+        "200":
+          description: "200 response"
+          schema:
+            $ref: "#/definitions/Empty"
+definitions:
+  Empty:
+    type: "object"
+    title: "Empty Schema"
