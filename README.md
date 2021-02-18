@@ -13,6 +13,7 @@ Se desplego el jar en una instancia EC2 de AWS y se creo un APIGataway también 
 
 A continuación se muestra la arquitectura utilizada en la nube de aws.
 
+![arquitectura](https://user-images.githubusercontent.com/43051783/108292110-75612800-7161-11eb-88d8-57e6382783e5.jpg)
 
 
 El servicio consta de dos métodos, el primero (mutants) que es un servicio POST y que se encarga enviar una Array para que sea evaluado por el back,
