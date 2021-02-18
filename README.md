@@ -1,13 +1,19 @@
 # examenMutantesMeli
 
-### Examen Mutantes MELI
+#### Examen Mutantes MELI
 
 El presente es con el fin de explicar cómo se realizó el desarrollo de la solución y como se puede consumir los servicios web que se expusieron:
 
-## Desarrollo
+### Desarrollo
 
 En primer lugar se especifica que el desarrollo fue realizado en Java utilizando el Framework de Spring y con maven como repositorio,
 se utilizó conexión a una base de datos creada en Amazon de tipo RDS Mysql y la conexión se realizó por medio de JPA.
+
+
+En la fase de desarrollo se realizó una separación de clases de acuerdo al propósito, es decir se separaron las clases que realizan la conexión hacia la base de datos de la que tienen la lógica del aplicativo, las credenciales hacia la base de datos se encuentran en el archivo application.yaml.
+
+La base de datos consta de una sola tabla:
+
 
 Se desplego el jar en una instancia EC2 de AWS y se creo un APIGataway también en nube para enlazar el enpoint y que fuera consumida a través de este.
 
