@@ -12,6 +12,8 @@ se utilizó conexión a una base de datos creada en Amazon de tipo RDS Mysql y l
 
 En la fase de desarrollo se realizó una separación de clases de acuerdo al propósito utilizando las anotaciones de spring, es decir se separaron las clases que realizan la conexión hacia la base de datos (respository) de la que tienen la lógica del aplicativo (service), asi tambien como la separación de las clase controller , las credenciales hacia la base de datos se encuentran en el archivo application.yaml.
 
+Para la lógica de la aplicación, se utilizaron dos ciclos for para recorrer dos posiciones del arreglo al tiempo, se va analizando directamente del arreglo cada coincidencia en alguno de los sentidos indicados (horizontal, diagonal, hacia arriba o abajo) y en caso de encontrar las dos secuencias que identifican al mutante, se termina los dos ciclos de recorrido, esto permite recorrer solo una vez todo el arreglo.
+
 La base de datos consta de una sola tabla:
 
 ![melitabla](https://user-images.githubusercontent.com/43051783/108377878-77af9a80-71d2-11eb-8528-606bd859c117.jpg)
