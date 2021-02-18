@@ -11,6 +11,10 @@ se utilizó conexión a una base de datos creada en Amazon de tipo RDS Mysql y l
 
 Se desplego el jar en una instancia EC2 de AWS y se creo un APIGataway también en nube para enlazar el enpoint y que fuera consumida a través de este.
 
+A continuación se muestra la arquitectura utilizada en la nube de aws.
+
+
+
 El servicio consta de dos métodos, el primero (mutants) que es un servicio POST y que se encarga enviar una Array para que sea evaluado por el back,
 el enpoint es el siguiente:
 
