@@ -10,9 +10,11 @@ En primer lugar se especifica que el desarrollo fue realizado en Java utilizando
 se utilizó conexión a una base de datos creada en Amazon de tipo RDS Mysql y la conexión se realizó por medio de JPA.
 
 
-En la fase de desarrollo se realizó una separación de clases de acuerdo al propósito, es decir se separaron las clases que realizan la conexión hacia la base de datos de la que tienen la lógica del aplicativo, las credenciales hacia la base de datos se encuentran en el archivo application.yaml.
+En la fase de desarrollo se realizó una separación de clases de acuerdo al propósito utilizando las anotaciones de spring, es decir se separaron las clases que realizan la conexión hacia la base de datos (respository) de la que tienen la lógica del aplicativo (service), asi tambien como la separación de las clase controller , las credenciales hacia la base de datos se encuentran en el archivo application.yaml.
 
 La base de datos consta de una sola tabla:
+
+![melitabla](https://user-images.githubusercontent.com/43051783/108377878-77af9a80-71d2-11eb-8528-606bd859c117.jpg)
 
 
 Se desplego el jar en una instancia EC2 de AWS y se creo un APIGataway también en nube para enlazar el enpoint y que fuera consumida a través de este.
