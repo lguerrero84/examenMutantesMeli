@@ -23,7 +23,7 @@ public class validateMutants {
 	@Qualifier("serviceMutants")
 	private SecuenceMutants serviceSecuenceMutants; 
 	
-	@PostMapping(value="/validate")
+	@PostMapping(value="/mutant")
 	public ResponseEntity<HttpStatus> findMutants(@RequestBody dnaDTO dna){
 		
 	
@@ -39,7 +39,7 @@ public class validateMutants {
 		
 	}
 	
-	@GetMapping(value="/stage")
+	@GetMapping(value="/stats")
 	public ResponseEntity<AverageMutants> getAverage(){
 			
 		AverageMutants avg= new AverageMutants();
